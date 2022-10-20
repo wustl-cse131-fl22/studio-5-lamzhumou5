@@ -1,5 +1,7 @@
 package studio5;
 
+import java.awt.Color;
+
 import edu.princeton.cs.introcs.StdDraw;
 
 public class Methods {
@@ -34,17 +36,21 @@ public class Methods {
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
-
+		Color rgb1 = new Color(0, 109, 219);
+		StdDraw.setPenColor(rgb1);
+		StdDraw.filledCircle(x, y, 3.0/4.0*radius);
 		
-
 		// Red ring with 1.0/2.0 the radius
 		// suggested rgb values: 146, 0, 0
-
+		Color rgb2 = new Color(146, 0, 0);
+		StdDraw.setPenColor(rgb2);
+		StdDraw.filledCircle(x, y, 1.0/2.0*radius);
 		
-
 		// Yellow ring with 1.0/4.0 the radius
 		// suggested rgb values: 255, 255, 109
-
+		Color rgb3 = new Color(255, 255, 109);
+		StdDraw.setPenColor(rgb3);
+		StdDraw.filledCircle(x, y, 1.0/4.0*radius);
 		
 	}
 
